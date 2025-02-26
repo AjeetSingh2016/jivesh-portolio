@@ -1,0 +1,41 @@
+{
+    "hero": {
+      "name": "Jivesh Dixit",
+      "quote": "चरन्मार्गान्विजानाति। -- महाभारत, आदि पर्व १३३-२३"
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I am a Project Scientist II at NCMRWF and a PhD candidate at IIT Delhi..."
+    },
+    "research": {
+      "title": "Research",
+      "description": "My research is focused on Near-term prediction of regional climate..."
+    },
+    "publications": [
+      {
+        "title": "Experimental Investigation of Thermal Energy Storage System",
+        "link": "https://doi.org/10.1007/978-981-10-7122-5_12"
+      },
+      {
+        "title": "Experimental analysis of packed bed heat regenerator",
+        "link": "https://doi.org/10.1016/j.matpr.2020.12.1193"
+      }
+    ],
+    "awards": [
+      "All India Rank 1 in GATE-2011",
+      "PMRF Fellowship at IIT Delhi",
+      "Early Career Scientist Travel Support by EGU 2024"
+    ],
+    "skills": ["Python", "MATLAB", "FORTRAN", "Bash Scripting"],
+    "certifications": [
+      "Linux System Security and Administration (ISEA)",
+      "Linear Regression with Numpy and Python (Coursera)"
+    ],
+    "contact": {
+      "email": "jiveshdixit@cas.iitd.ac.in",
+      "github": "https://github.com/jiveshdixit",
+      "linkedin": "https://linkedin.com/in/jiveshdixit",
+      "youtube": "https://youtube.com/channel/xyz"
+    }
+  }
+  
