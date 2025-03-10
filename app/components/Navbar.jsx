@@ -100,8 +100,8 @@ const Navbar = () => {
               Certification
             </li>
             <li>
-              <Link href="/blog" className={`cursor-pointer ${isActive("/blog")}`} onClick={() => setIsOpen(false)}>
-                Blog
+              <Link href="/blogs" className={`cursor-pointer ${isActive("/blog")}`} onClick={() => setIsOpen(false)}>
+                Blogs
               </Link>
             </li>
           </ul>
