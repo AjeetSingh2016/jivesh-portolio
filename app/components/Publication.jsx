@@ -40,7 +40,7 @@ const publications = [
 
 export default function Publications() {
   return (
-    <section className="px-6 md:px-12 lg:px-24">
+    <section id="publications" className="px-6 md:px-12 lg:px-24">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-white mb-10 text-center">Publications</h2>
         <div className="relative border-l-4 border-green-500">

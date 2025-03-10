@@ -49,14 +49,13 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="h-10 w-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-green-500 transition"
           >
-         <Image
-  src="/xIndices.webp"
-  width={100}
-  height={10}
-  alt="Profile"
-  className="object-cover w-full h-full brightness-0 invert"
-/>
-
+            <Image
+              src="/xIndices.webp"
+              width={100}
+              height={10}
+              alt="Profile"
+              className="object-cover w-full h-full brightness-0 invert"
+            />
           </a>
         </div>
       </div>

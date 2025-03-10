@@ -42,7 +42,7 @@ export default function Certifications() {
     ];
   
     return (
-      <section className="py-1 px-6 md:px-12 lg:px-24">
+      <section id="certifications" className="py-1 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <div className="bg-gray-900 p-6 md:p-8 rounded-lg shadow-lg border border-gray-700 w-full">
             {/* Title inside the card */}

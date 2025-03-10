@@ -1,0 +1,53 @@
+## Understanding Variant Labels in CMIP5 and CMIP6
+
+Ensembles (Variant label) in CMIP5 (CMIP6) have been assigned to help identify the different simulations within a set of experiments. To locate specific experiments out of the various CMIP5/CMIP6 simulations, global attributes have been defined. These are:
+
+### Experiment ID
+Experiment ID is used to identify the root experiment for the simulation. For example:
+- Historical
+- SSP scenarios (ssp126, ssp245, ssp370, etc.)
+- dcppA-hindcast
+- dcppB-forecast
+
+### Sub-Experiment ID
+Sub-experiment for a defined ensemble, otherwise marked as 'None'. Sub-experiments are not defined in CMIP5. In CMIP6, they are mainly defined for DCPP experiments. For example, in dcppA-hindcast experiments, `s1961` defines the year in which the experiment is initialized.
+
+### Variant Label
+For an experiment, **Realization Index, Initialization Index, Physics Index,** and **Forcing Index** are used to uniquely identify simulations of an ensemble of runs contributed to a single model.
+
+#### Realization Index (k)
+- **(>=1)** Index distinguishing among members of an ensemble of simulations that differ only in their initialization point (temporally), i.e., initialized from different points in a control run.
+- Example: Simulations with *Natural forcing alone* and *Anthropogenic + Natural forcing* starting at the same point in time will have the same realization number. However, this may not always hold for all experiments within the same model. For example:
+  - DCPP experiments (initialized every year at different points in time can have the same realization number)
+  - piControl experiments
+- Across different models, the same realization number does not ensure that experiments have been initialized at the same point.
+
+#### Initialization Index (l)
+- **(>=1)** This index is meant to distinguish between various algorithms used to impose initial conditions on a forecast or to differentiate between observational datasets used for initialization. Otherwise, it is assigned '1'.
+
+#### Physics Index (m)
+- **(>=1)** For a single physics version of the model, this index is assigned the value '1'. It is essential that there be consistent assignment of the Physics Index across all simulations of a particular model.
+- **Note:**
+  - Models with substantial differences in physics from others should also be assigned a different **source ID**, not just a different Physics Index.
+
+### Forcing Index (n)
+In CMIP5, the above three numbers were used in the variant label to differentiate between sets of experiments in the given model. However, in CMIP6, **one more number is introduced**:
+
+- **(>=1)** This index distinguishes between runs following standard protocols of a single CMIP6 experiment but with different forcing.
+- **Example:** Two historical simulations, one forced with CMIP6 recommended forcing datasets and another forced by a different dataset, should be distinguished by this index.
+
+### Variant Label Representation
+The Variant Label is represented as:
+```
+r<k>i<l>p<m>f<n>
+```
+Example:
+```
+r2i1p3f233
+```
+where:
+- `k = 2`
+- `l = 1`
+- `m = 3`
+- `n = 233`
+

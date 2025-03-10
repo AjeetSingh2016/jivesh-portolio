@@ -56,7 +56,7 @@ export default function AchievementsAndSkills() {
   ];
 
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-24">
+    <section id="skills" className="py-16 px-6 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Awards & Achievements Card */}
         <div className="bg-gray-900 p-6 rounded-2xl shadow-lg border border-gray-700">
